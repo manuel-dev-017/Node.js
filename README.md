@@ -102,3 +102,23 @@ export const multiplicar = (a, b) => a * b;
 // Importar un módulo
 import { sumar, restar } from "./miModulo.js";
 ```
+
+### NPM (Node Package Manager)
+
+#### `package.json`
+
+Es el **cerebro y pasaporte de tu proyecto**. Funciona como un archivo de manifiesto en formato JSON que almacena la metadatos esencial de tu aplicación (como el nombre, versión y descripción).
+
+Su función principal es administrar las dependencias y los scripts. Aquí se registran de forma organizada todas las librerías externas que tu proyecto necesita para funcionar, junto con comandos personalizados para ejecutar, probar o construir tu código.
+
+#### **`package-lock.json`**
+
+Es el **historial de versiones exactas e inmutables** de tu proyecto. Se genera de forma automática al instalar librerías y guarda un mapa detallado y milimétrico (incluyendo versiones y subdependencias) de todo lo que se instaló.
+
+Su propósito fundamental es garantizar que cualquier persona que descargue tu código o lo suba a un servidor obtenga exactamente las mismas versiones de los paquetes, evitando fallos o incompatibilidades imprevistas.
+
+#### **`node_modules`**
+
+Es la **carpeta que almacena físicamente todo el código fuente** de las librerías y dependencias que vas instalando a través de NPM. Contiene miles de archivos pequeños correspondientes a los paquetes descargados para tu proyecto.
+
+Es una carpeta sumamente pesada que **nunca debe subirse a Git ni compartirse**, ya que puede reconstruirse de manera automática e inmediata en cualquier computadora con solo ejecutar el comando `npm install` utilizando la información guardada en tu `package.json` y `package-lock.json`.
