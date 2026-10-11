@@ -122,3 +122,35 @@ Su propósito fundamental es garantizar que cualquier persona que descargue tu c
 Es la **carpeta que almacena físicamente todo el código fuente** de las librerías y dependencias que vas instalando a través de NPM. Contiene miles de archivos pequeños correspondientes a los paquetes descargados para tu proyecto.
 
 Es una carpeta sumamente pesada que **nunca debe subirse a Git ni compartirse**, ya que puede reconstruirse de manera automática e inmediata en cualquier computadora con solo ejecutar el comando `npm install` utilizando la información guardada en tu `package.json` y `package-lock.json`.
+
+### Tipos de banderas de dependencias
+
+`--save` (`-S`): Esta bandera se usa para guardar la dependencia en la sección "dependencies" del archivo package.json.
+
+```powershell
+npm install express --save
+```
+
+`--save-dev` (`-D`): Esta bandera se usa para guardar la dependencia en la sección "devDependencies" del archivo package.json.
+
+```powershell
+npm install jest --save-dev
+```
+
+`--global` (`-g`): Esta bandera se usa para instalar la dependencia de forma global en el sistema, lo que la hace accesible para todos los proyectos.
+
+```powershell
+npm install nodemon -g
+```
+
+`--production`: Esta bandera se usa para instalar solo las dependencias de producción y omitir las dependencias de desarrollo.
+
+```powershell
+npm install --production
+```
+
+`--no-save`: Esta bandera se usa para evitar que NPM agregue la dependencia al archivo package.json. Es útil si solo quieres instalar una dependencia temporalmente sin guardarla en el proyecto.
+
+```powershell
+npm install lodash --no-save
+```
