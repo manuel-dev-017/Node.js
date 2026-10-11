@@ -1,0 +1,18 @@
+{
+  "name": "primeros-pasos-npm",
+  "version": "1.0.0",
+  "description": "En este proyecto aprendemos NPM",
+  "license": "MIT",
+  "author": "Manuel Arias <manuel.arias.professional@gmail.com>",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^19.3.0"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
