@@ -154,3 +154,31 @@ npm install --production
 ```powershell
 npm install lodash --no-save
 ```
+
+### Comando npx
+
+**npx** (Node Package Execute) es una herramienta que viene instalada por defecto junto con npm (a partir de la versión 5.2.0) en Node.js. Su función principal es ejecutar paquetes de Node.js de forma directa, sin necesidad de instalarlos previamente de forma global ni local en tu proyecto. Fucniones:
+
+- Ejecución de paquetes temporales
+
+```powershell
+npx create-react-app my-app
+```
+
+En este ejemplo, npx ejecuta el paquete create-react-app temporalmente para crear una nueva aplicación de React llamada my-app sin necesidad de instalar el paquete globalmente en el sistema.
+
+- Ejecución de comandos de paquetes instalados globalmente
+
+```powershell
+npx nodemon app.js
+```
+
+En este ejemplo, npx ejecuta el paquete nodemon globalmente para monitorear y reiniciar automáticamente la aplicación app.js.
+
+- Seleccionar versiones específicas de paquetes
+
+```powershell
+npx mocha@6 test.js
+```
+
+En este ejemplo, npx ejecuta el paquete mocha en su versión 6 para ejecutar las pruebas definidas en test.js
