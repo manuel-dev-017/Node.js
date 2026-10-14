@@ -1,7 +1,7 @@
-# Hola Muno con _11ty_
+# Hola Mundo con _11ty_
 
 - Uno
 - Dos
 - Tres
 
-¡Saludos Manuel!
+¡Saludos Manuel Arias, Linday y Oscar !

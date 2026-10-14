@@ -40,7 +40,7 @@ A diferencia de otros lenguajes de backend tradicionales (como Java, PHP o C#) q
 
 Eficiencia: Al no gastar recursos abriendo un hilo nuevo por cada usuario conectado (lo que consume mucha memoria RAM y capacidad de cómputo en cambios de contexto), este modelo permite escalar y manejar una concurrencia masiva de forma sumamente eficiente.
 
-### Evetn Loop
+### Event Loop
 
 <img  width="100%" src='./01_CicloEventos/event-loop-nodejs.gif'></img>
 

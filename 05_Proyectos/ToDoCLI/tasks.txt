@@ -1,0 +1,2 @@
+Completar curso|true
+New task|false
